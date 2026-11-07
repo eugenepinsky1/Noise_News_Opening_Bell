@@ -1,0 +1,21 @@
+\begin{table}[H]
+\caption{Own-fund and sister-fund session reversal. For each value-minus-growth spread, own measures relate its overnight spread $n_A$ to its own intraday spread $d_A$, and cross measures relate $n_A$ to the intraday spread $d_B$ of the sister index. $\rho$ is the correlation and Cov the covariance in squared basis points. OLS is the slope of $d_A$ on $n_A$; IV is the same slope with $n_A$ instrumented by the sister overnight spread $n_B$. $\hat\sigma^2_e = \operatorname{Cov}(n_A, d_B - d_A)$ estimates the variance of the fund-specific opening-price error (Equation~(\ref{eq:noise})); the last column expresses it as a percentage of the variance of $n_A$. Significance from Newey--West ($10$ lags) $t$-statistics: $^{*}$ 10\%, $^{**}$ 5\%, $^{***}$ 1\%. Sample: 4 September 2001 to 25 September 2026.\label{tab:owncross}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\small
+\begin{tabularx}{\fulllength}{llCCCCCCCC}
+\toprule
+ & & \multicolumn{2}{c}{$\boldsymbol{\rho}$} & \multicolumn{2}{c}{\textbf{Cov (bps$^2$)}} & \multicolumn{2}{c}{\textbf{Slope}} & & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+\textbf{Spread A} & \textbf{Sister B} & \textbf{Own} & \textbf{Cross} & \textbf{Own} & \textbf{Cross} & \textbf{OLS} & \textbf{IV} & $\boldsymbol{\hat\sigma^2_e}$ & \textbf{\% of Var($n_A$)} \\
+\midrule
+Russell 1000 & S\&P 500 & $-$0.19 & $-$0.01 & $-$440$^{***}$ & $-$22 & $-$0.29$^{***}$ & 0.05 & 418$^{***}$ & 28 \\
+S\&P 500 & Russell 1000 & $-$0.12 & 0.02 & $-$225$^{***}$ & 40 & $-$0.18$^{***}$ & $-$0.03 & 265$^{***}$ & 21 \\
+Russell Midcap & S\&P 400 & $-$0.22 & 0.01 & $-$490$^{***}$ & 17 & $-$0.34$^{***}$ & $-$0.22 & 506$^{***}$ & 36 \\
+S\&P 400 & Russell Midcap & $-$0.37 & $-$0.04 & $-$551$^{**}$ & $-$73 & $-$0.55$^{***}$ & 0.05 & 478$^{***}$ & 48 \\
+Russell 2000 & S\&P 600 & $-$0.23 & 0.00 & $-$450$^{***}$ & $-$4 & $-$0.41$^{***}$ & $-$0.22 & 446$^{***}$ & 41 \\
+S\&P 600 & Russell 2000 & $-$0.31 & $-$0.02 & $-$499$^{***}$ & $-$42 & $-$0.39$^{***}$ & $-$0.02 & 457$^{***}$ & 36 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}

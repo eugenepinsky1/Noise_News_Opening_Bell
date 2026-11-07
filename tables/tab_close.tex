@@ -1,0 +1,19 @@
+\begin{table}[H]
+\caption{The closing boundary. Intraday-to-next-overnight: own is $\rho(d_{A,t}, n_{A,t+1})$ and cross is $\rho(d_{A,t}, n_{B,t+1})$; a fund-specific error in the closing price enters $d_{A,t}$ and $n_{A,t+1}$ with opposite signs, and $\hat\sigma^2_c = \operatorname{Cov}(d_{A,t}, n_{B,t+1} - n_{A,t+1})$ estimates its variance in squared basis points, for comparison with the opening-price estimate $\hat\sigma^2_e$ of Table~\ref{tab:owncross}. Close-to-close: own is the first-order autocorrelation of spread $A$ and cross is $\rho(s_{A,t}, s_{B,t+1})$. The bottom panel replaces the Russell sister with the SPDR S\&P 500 style ETFs (SPYG, SPYV), which track the same indices as IVW and IVE over 2018--2025 (adjusted closes only). Significance of the corresponding covariance from Newey--West $t$-statistics: $^{*}$ 10\%, $^{**}$ 5\%, $^{***}$ 1\%.\label{tab:close}}
+\centering
+\small
+\begin{tabularx}{\textwidth}{lCCCCCC}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Intraday $\to$ next overnight}} & \multicolumn{2}{c}{\textbf{Close-to-close}}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}
+\textbf{Spread A} & \textbf{Own} & \textbf{Cross} & $\boldsymbol{\hat\sigma^2_c}$ & $\boldsymbol{\hat\sigma^2_e}$ & \textbf{Own} & \textbf{Cross}\\
+\midrule
+Russell 1000 & 0.01 & 0.08$^{***}$ & 124$^{***}$ & 418 & $-$0.02 & 0.02 \\
+S\&P 500 & 0.04$^{**}$ & 0.07$^{***}$ & 64$^{**}$ & 265 & 0.00 & 0.01 \\
+Russell Midcap & $-$0.04$^{*}$ & 0.02 & 139$^{**}$ & 506 & $-$0.03 & 0.02 \\
+S\&P 400 & $-$0.02 & 0.06$^{***}$ & 145$^{**}$ & 478 & $-$0.04$^{*}$ & 0.03 \\
+Russell 2000 & $-$0.08$^{***}$ & 0.05 & 275$^{***}$ & 446 & $-$0.05$^{*}$ & 0.03 \\
+S\&P 600 & $-$0.05 & 0.00 & 81 & 457 & $-$0.15 & 0.02 \\
+\bottomrule
+\end{tabularx}
+\end{table}

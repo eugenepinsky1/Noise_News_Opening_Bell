@@ -1,0 +1,30 @@
+\begin{table}[H]
+\caption{Fund-level opening and closing price noise. Standard deviations, in basis points, of fund-specific errors in the opening price (Open) and the closing price (Close) of individual ETFs, for iShares (I), Vanguard (V) and SPDR (S) funds tracking the same index. For groups of three funds, each fund's error variance is identified from the three pairwise sums $\sigma^2_A + \sigma^2_B = -\operatorname{Cov}(n_A - n_B, d_A - d_B)$ for the open and $-\operatorname{Cov}(d_{A,t} - d_{B,t}, n_{A,t+1} - n_{B,t+1})$ for the close (Equation~(\ref{eq:hat})); for groups of two funds only the sum is identified. $<$0: negative variance estimate. Full: 2011--2026; early: 2011--2015; late: 2021 to 25 September 2026; 24 August 2015 excluded.\label{tab:fundnoise}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\footnotesize
+\begin{tabularx}{\fulllength}{lCCCCCCCCCCCC}
+\toprule
+ & \multicolumn{3}{c}{\textbf{Open, full}} & \multicolumn{3}{c}{\textbf{Close, full}} & \multicolumn{3}{c}{\textbf{Open, early}} & \multicolumn{3}{c}{\textbf{Open, late}}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
+\textbf{Index fund group} & \textbf{I} & \textbf{V} & \textbf{S} & \textbf{I} & \textbf{V} & \textbf{S} & \textbf{I} & \textbf{V} & \textbf{S} & \textbf{I} & \textbf{V} & \textbf{S}\\
+\midrule
+Russell 1000 Growth & \multicolumn{3}{c}{16.2 (sum of I and V)} & \multicolumn{3}{c}{10.9 (sum of I and V)} & \multicolumn{3}{c}{24.6 (sum of I and V)} & \multicolumn{3}{c}{9.0 (sum of I and V)} \\
+Russell 1000 Value & \multicolumn{3}{c}{15.6 (sum of I and V)} & \multicolumn{3}{c}{10.6 (sum of I and V)} & \multicolumn{3}{c}{23.1 (sum of I and V)} & \multicolumn{3}{c}{9.0 (sum of I and V)} \\
+Russell 1000 & \multicolumn{3}{c}{15.4 (sum of I and V)} & \multicolumn{3}{c}{9.3 (sum of I and V)} & \multicolumn{3}{c}{22.5 (sum of I and V)} & \multicolumn{3}{c}{8.9 (sum of I and V)} \\
+Russell 2000 Growth & \multicolumn{3}{c}{26.1 (sum of I and V)} & \multicolumn{3}{c}{16.5 (sum of I and V)} & \multicolumn{3}{c}{30.1 (sum of I and V)} & \multicolumn{3}{c}{21.8 (sum of I and V)} \\
+Russell 2000 Value & \multicolumn{3}{c}{29.0 (sum of I and V)} & \multicolumn{3}{c}{27.2 (sum of I and V)} & \multicolumn{3}{c}{35.8 (sum of I and V)} & \multicolumn{3}{c}{23.0 (sum of I and V)} \\
+Russell 2000 & \multicolumn{3}{c}{12.4 (sum of I and V)} & \multicolumn{3}{c}{12.7 (sum of I and V)} & \multicolumn{3}{c}{15.1 (sum of I and V)} & \multicolumn{3}{c}{4.2 (sum of I and V)} \\
+S\&P 500 Growth & 6.5 & 16.0 & 7.9 & 4.0 & 8.5 & 6.3 & 9.8 & 26.9 & 11.9 & 2.7 & 3.6 & 3.1 \\
+S\&P 500 Value & 8.7 & 13.0 & 14.6 & 9.8 & 11.5 & 7.8 & 14.3 & 20.2 & 22.3 & 2.9 & 4.3 & 4.0 \\
+S\&P 500 & 1.2 & 2.8 & 3.5 & 2.1 & 2.4 & 3.0 & 0.6 & 3.4 & 1.4 & 1.0 & 0.6 & 0.4 \\
+S\&P MidCap 400 Growth & 13.0 & 20.3 & 21.0 & 11.1 & 15.8 & 12.5 & 19.0 & 21.7 & 33.7 & 6.6 & 23.2 & 7.8 \\
+S\&P MidCap 400 Value & 18.5 & 21.5 & 21.8 & 19.8 & 16.7 & 11.9 & 31.2 & 29.2 & 32.8 & 4.4 & 17.2 & 6.8 \\
+S\&P MidCap 400 & 4.3 & 16.1 & 4.7 & 4.3 & 13.6 & $<$0 & 4.2 & 23.1 & 2.2 & 4.0 & 10.7 & 4.5 \\
+S\&P SmallCap 600 Growth & 17.6 & 23.1 & 15.3 & 13.7 & 18.6 & 7.8 & 17.7 & 30.6 & 23.9 & 12.9 & 18.2 & 9.5 \\
+S\&P SmallCap 600 Value & 11.2 & 23.2 & 19.7 & 12.2 & 24.8 & 4.3 & 18.2 & 35.6 & 26.9 & 7.0 & 10.7 & 5.9 \\
+S\&P SmallCap 600 & \multicolumn{3}{c}{21.3 (sum of I and V)} & \multicolumn{3}{c}{18.4 (sum of I and V)} & \multicolumn{3}{c}{32.7 (sum of I and V)} & \multicolumn{3}{c}{11.2 (sum of I and V)} \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}

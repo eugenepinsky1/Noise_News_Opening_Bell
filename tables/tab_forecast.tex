@@ -1,0 +1,28 @@
+\begin{table}[H]
+\caption{Forecasting the overnight variance of style spreads. Each day, the variance of the next overnight spread is forecast from the previous 250 days, either from reported prices (Raw), after subtracting the rolling opening-noise variance $\widehat{\operatorname{Cov}}(n_A, \bar d_B - d_A)$ (Open), or after also subtracting the rolling closing-noise variance $\widehat{\operatorname{Cov}}(d_{A,t}, \bar n_{B,t+1} - n_{A,t+1})$ (Full). Forecasts are evaluated against the proxy $n_{A,t}\bar n_{B,t}$, which is unbiased for the efficient overnight variance when pricing errors are independent across funds; squared-error loss is robust to the noise in such a proxy \citep{Patton2011}. Means are in squared basis points; bias is the mean forecast relative to the mean proxy, in percent. MSE ratio is the mean squared error of a corrected forecast divided by that of the raw forecast; DM is the Diebold--Mariano $t$-statistic for equal loss (positive: corrected better). Significance from Newey--West ($10$ lags) $t$-statistics: $^{*}$ 10\%, $^{**}$ 5\%, $^{***}$ 1\%. Sample: 3 January 2011 to 25 September 2026, excluding 24 August 2015; evaluation from January 2012.\label{tab:forecast}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\footnotesize
+\begin{tabularx}{\fulllength}{lCCCCCCCCCCC}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Mean (bps$^2$)}} & \multicolumn{3}{c}{\textbf{Bias (\%)}} & \multicolumn{2}{c}{\textbf{Open vs.\ raw}} & \multicolumn{2}{c}{\textbf{Full vs.\ raw}}\\
+\cmidrule(lr){2-5}\cmidrule(lr){6-8}\cmidrule(lr){9-10}\cmidrule(lr){11-12}
+\textbf{Spread} & \textbf{Proxy} & \textbf{Raw} & \textbf{Open} & \textbf{Full} & \textbf{Raw} & \textbf{Open} & \textbf{Full} & \textbf{MSE ratio} & \textbf{DM} & \textbf{MSE ratio} & \textbf{DM}\\
+\midrule
+Russell 1000 iShares & 1,321 & 1,283 & 1,219 & 1,193 & $-$3 & $-$8 & $-$10 & 1.00 & 0.38 & 1.00 & $-$0.34 \\
+Russell 1000 Vanguard & 1,321 & 1,627 & 1,342 & 1,246 & 23 & 2 & $-$6 & 0.98 & 4.76$^{***}$ & 0.98 & 4.98$^{***}$ \\
+Russell 2000 iShares & 406 & 514 & 390 & 386 & 26 & $-$4 & $-$5 & 1.00 & 0.23 & 1.00 & 1.37 \\
+Russell 2000 Vanguard & 406 & 2,399 & 1,363 & 768 & 491 & 236 & 89 & 0.72 & 6.33$^{***}$ & 0.44 & 5.35$^{***}$ \\
+S\&P 500 iShares & 1,279 & 1,215 & 1,157 & 1,144 & $-$5 & $-$10 & $-$11 & 1.00 & 0.05 & 1.00 & $-$0.65 \\
+S\&P 500 Vanguard & 1,272 & 1,737 & 1,355 & 1,222 & 37 & 7 & $-$4 & 0.96 & 8.15$^{***}$ & 0.96 & 7.13$^{***}$ \\
+S\&P 500 SPDR & 1,294 & 1,604 & 1,314 & 1,182 & 24 & 2 & $-$9 & 0.99 & 6.43$^{***}$ & 0.98 & 6.46$^{***}$ \\
+S\&P MidCap 400 iShares & 277 & 353 & 246 & 212 & 27 & $-$11 & $-$24 & 0.99 & 1.18 & 1.00 & 0.06 \\
+S\&P MidCap 400 Vanguard & 340 & 2,013 & 1,121 & 812 & 492 & 230 & 139 & 0.59 & 6.86$^{***}$ & 0.44 & 6.36$^{***}$ \\
+S\&P MidCap 400 SPDR & 330 & 1,785 & 915 & 507 & 441 & 177 & 54 & 0.49 & 6.48$^{***}$ & 0.32 & 6.01$^{***}$ \\
+S\&P SmallCap 600 iShares & 264 & 1,313 & 989 & 1,084 & 397 & 275 & 311 & 0.90 & 4.61$^{***}$ & 0.97 & 3.27$^{***}$ \\
+S\&P SmallCap 600 Vanguard & 304 & 1,886 & 1,081 & 596 & 520 & 255 & 96 & 0.90 & 6.84$^{***}$ & 0.81 & 5.95$^{***}$ \\
+S\&P SmallCap 600 SPDR & 170 & 969 & 423 & 160 & 470 & 149 & $-$6 & 0.66 & 6.48$^{***}$ & 0.59 & 5.88$^{***}$ \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}

@@ -1,0 +1,29 @@
+\begin{table}[H]
+\caption{Opening-print noise and liquidity: annual panel. Each observation is one of the six spreads in one calendar year, 2002--2025 ($n = 144$). Noise share is $\hat\sigma^2_e$ divided by the variance of the overnight spread; own and cross $\rho$ are as in Table~\ref{tab:owncross}. Regressors are the average of the two style funds' Corwin--Schultz (CS) or Abdi--Ranaldo (AR) spread estimates, the log of their average daily dollar volume and their percentage of stale opens. All regressions include spread fixed effects; the right panel adds a linear time trend. $t$-statistics clustered by year in parentheses; $^{*}$ 10\%, $^{**}$ 5\%, $^{***}$ 1\%.\label{tab:liq}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\small
+\begin{tabularx}{\fulllength}{llCCCCCC}
+\toprule
+ & & \multicolumn{3}{c}{\textbf{Fixed effects}} & \multicolumn{3}{c}{\textbf{Fixed effects + trend}}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+\textbf{Dependent} & \textbf{Regressor} & \textbf{Coef.} & $\boldsymbol{t}$ & $\boldsymbol{R^2}$ & \textbf{Coef.} & $\boldsymbol{t}$ & $\boldsymbol{R^2}$\\
+\midrule
+Noise share & CS spread (bps) & 0.000 & (0.06) & 0.12 & $-$0.001 & ($-$0.52) & 0.42 \\
+ & AR spread (bps) & $-$0.001 & ($-$0.77) & 0.13 & 0.000 & ($-$0.50) & 0.42 \\
+ & log dollar volume & $-$0.151$^{***}$ & ($-$3.75) & 0.28 & 0.024 & (0.72) & 0.41 \\
+ & Stale opens (\%) & 0.100$^{***}$ & (4.75) & 0.30 & 0.035 & (1.63) & 0.43 \\
+\midrule
+Own $\rho$ & CS spread (bps) & $-$0.001 & ($-$0.29) & 0.04 & 0.000 & (0.19) & 0.51 \\
+ & AR spread (bps) & 0.001 & (1.24) & 0.07 & 0.001 & (0.89) & 0.51 \\
+ & log dollar volume & 0.160$^{***}$ & (4.19) & 0.31 & $-$0.017 & ($-$0.44) & 0.51 \\
+ & Stale opens (\%) & $-$0.105$^{***}$ & ($-$6.45) & 0.33 & $-$0.038$^{**}$ & ($-$2.05) & 0.53 \\
+\midrule
+Cross $\rho$ & CS spread (bps) & $-$0.001 & ($-$0.46) & 0.02 & 0.000 & ($-$0.30) & 0.06 \\
+ & AR spread (bps) & 0.000 & (0.80) & 0.02 & 0.000 & (0.47) & 0.06 \\
+ & log dollar volume & 0.021 & (1.39) & 0.03 & $-$0.016 & ($-$0.87) & 0.06 \\
+ & Stale opens (\%) & $-$0.014 & ($-$1.48) & 0.03 & $-$0.001 & ($-$0.05) & 0.06 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
