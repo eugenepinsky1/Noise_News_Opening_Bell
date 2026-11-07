@@ -1,0 +1,8 @@
+# Versions used to produce the published results (Python 3.13).
+pandas==3.0.5
+numpy==2.5.3
+statsmodels==0.15.0
+matplotlib==3.11.2
+scipy==1.18.1
+# Only needed for code/download_data.py
+yfinance==1.7.0

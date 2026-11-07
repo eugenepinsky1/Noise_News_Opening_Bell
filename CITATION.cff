@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Replication code for: Noise or News at the Opening Bell? Fund-Specific Pricing Errors and the Overnight-Intraday Reversal in Growth-Value ETF Spreads"
+authors:
+  - family-names: Salotra
+    given-names: Gourav
+    orcid: "https://orcid.org/0009-0004-5337-2155"
+  - family-names: Pinsky
+    given-names: Eugene
+    orcid: "https://orcid.org/0000-0002-3836-1851"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Noise or News at the Opening Bell? Fund-Specific Pricing Errors and the Overnight-Intraday Reversal in Growth-Value ETF Spreads"
+  authors:
+    - family-names: Salotra
+      given-names: Gourav
+    - family-names: Pinsky
+      given-names: Eugene
+  journal: "Journal of Risk and Financial Management"
+  year: 2026
+  notes: "Submitted manuscript; update volume, article number and DOI on publication."

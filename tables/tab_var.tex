@@ -1,0 +1,28 @@
+\begin{table}[H]
+\caption{Overnight value-at-risk of style-spread positions. Each day, a Gaussian 99\% VaR for the next overnight spread is computed from the raw or the noise-corrected 250-day variance forecast of Table~\ref{tab:forecast}. VaR columns report averages in basis points of the notional of one leg; Overstatement is the average percentage by which the raw VaR exceeds the corrected VaR. Exceedances are the percentage of position-days, for long and short spread positions, on which the fund's own reported overnight spread $n_A$ falls beyond the VaR (nominal: 1\%). The reported spread is the outcome realized by a position traded at the opening price, for which opening noise is a genuine risk. Sample: 3 January 2011 to 25 September 2026, excluding 24 August 2015; evaluation from January 2012.\label{tab:var}}
+\centering
+\small
+\begin{tabularx}{\textwidth}{lCCCCC}
+\toprule
+ & \multicolumn{2}{c}{\textbf{99\% VaR (bps)}} & & \multicolumn{2}{c}{\textbf{Exceedances vs.\ $n_A$ (\%)}}\\
+\cmidrule(lr){2-3}\cmidrule(lr){5-6}
+\textbf{Spread} & \textbf{Raw} & \textbf{Corrected} & \textbf{Overstatement (\%)} & \textbf{Raw VaR} & \textbf{Corr. VaR}\\
+\midrule
+Russell 1000 iShares & 72 & 70 & 6 & 2.02 & 2.38 \\
+Russell 1000 Vanguard & 87 & 77 & 22 & 1.88 & 3.28 \\
+Russell 2000 iShares & 49 & 40 & 32 & 1.74 & 3.74 \\
+Russell 2000 Vanguard & 102 & 71 & 53 & 1.48 & 5.29 \\
+S\&P 500 iShares & 70 & 68 & 6 & 2.36 & 2.67 \\
+S\&P 500 Vanguard & 91 & 77 & 30 & 1.80 & 2.93 \\
+S\&P 500 SPDR & 88 & 77 & 22 & 1.81 & 3.17 \\
+S\&P MidCap 400 iShares & 41 & 32 & 70 & 1.67 & 5.89 \\
+S\&P MidCap 400 Vanguard & 90 & 61 & 63 & 1.66 & 5.64 \\
+S\&P MidCap 400 SPDR & 83 & 57 & 57 & 1.66 & 5.40 \\
+S\&P SmallCap 600 iShares & 57 & 42 & 70 & 1.46 & 7.19 \\
+S\&P SmallCap 600 Vanguard & 89 & 60 & 63 & 1.35 & 5.12 \\
+S\&P SmallCap 600 SPDR & 64 & 42 & 55 & 1.34 & 4.75 \\
+\midrule
+Average & 76 & 59 & 42 & 1.71 & 4.42 \\
+\bottomrule
+\end{tabularx}
+\end{table}

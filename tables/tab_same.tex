@@ -1,0 +1,32 @@
+\begin{table}[H]
+\caption{Own-fund and same-index sister reversal. For each value-minus-growth spread $A$, own measures relate its overnight spread $n_A$ to its own intraday spread $d_A$; cross measures relate $n_A$ to $\bar d_B$, the average intraday spread of the other fund families tracking the same pair of style indices. Cov is in squared basis points. OLS is the slope of $d_A$ on $n_A$; IV instruments $n_A$ with the average sister overnight spread $\bar n_B$. $\hat\sigma^2_e = \operatorname{Cov}(n_A, \bar d_B - d_A)$ is the variance of the fund-specific opening error of the spread; $\hat\sigma_e$ is its square root in basis points, and the last column expresses $\hat\sigma^2_e$ as a percentage of the variance of $n_A$. Significance from Newey--West ($10$ lags) $t$-statistics: $^{*}$ 10\%, $^{**}$ 5\%, $^{***}$ 1\%. Sample: 3 January 2011 to 25 September 2026, excluding 24 August 2015.\label{tab:same}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\small
+\begin{tabularx}{\fulllength}{llCCCCCCCCC}
+\toprule
+ & & \multicolumn{2}{c}{$\boldsymbol{\rho}$} & \multicolumn{2}{c}{\textbf{Cov (bps$^2$)}} & \multicolumn{2}{c}{\textbf{Slope}} & & & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+\textbf{Index} & \textbf{Family} & \textbf{Own} & \textbf{Cross} & \textbf{Own} & \textbf{Cross} & \textbf{OLS} & \textbf{IV} & $\boldsymbol{\hat\sigma^2_e}$ & $\boldsymbol{\hat\sigma_e}$ & \textbf{\% of Var($n_A$)}\\
+\midrule
+Russell 1000 & iShares & $-$0.02 & 0.01 & $-$35 & 29 & $-$0.03 & 0.05 & 64$^{***}$ & 8.0 & 5 \\
+Russell 1000 & Vanguard & $-$0.10 & 0.03 & $-$255$^{***}$ & 64 & $-$0.15$^{***}$ & 0.02 & 318$^{***}$ & 17.8 & 18 \\
+\midrule
+Russell 2000 & iShares & 0.00 & 0.09 & $-$3 & 137$^{***}$ & 0.00 & 0.42$^{***}$ & 140$^{***}$ & 11.8 & 26 \\
+Russell 2000 & Vanguard & $-$0.25 & 0.06 & $-$896$^{***}$ & 166$^{***}$ & $-$0.34$^{***}$ & 0.34$^{***}$ & 1,061$^{***}$ & 32.6 & 41 \\
+\midrule
+S\&P 500 & iShares & $-$0.01 & 0.02 & $-$21 & 34 & $-$0.02 & 0.06 & 56$^{***}$ & 7.5 & 4 \\
+S\&P 500 & Vanguard & $-$0.13 & 0.01 & $-$350$^{**}$ & 33 & $-$0.19$^{***}$ & 0.04 & 383$^{***}$ & 19.6 & 21 \\
+S\&P 500 & SPDR & $-$0.10 & 0.03 & $-$245$^{***}$ & 63 & $-$0.14$^{***}$ & 0.01 & 308$^{***}$ & 17.5 & 18 \\
+\midrule
+S\&P MidCap 400 & iShares & 0.00 & 0.12 & 3 & 119$^{***}$ & 0.01 & 0.58$^{***}$ & 116$^{***}$ & 10.8 & 29 \\
+S\&P MidCap 400 & Vanguard & $-$0.32 & 0.04 & $-$852$^{***}$ & 81$^{*}$ & $-$0.38$^{***}$ & 0.15 & 933$^{***}$ & 30.5 & 42 \\
+S\&P MidCap 400 & SPDR & $-$0.35 & 0.04 & $-$850$^{***}$ & 83$^{*}$ & $-$0.43$^{***}$ & 0.19$^{*}$ & 933$^{***}$ & 30.5 & 48 \\
+\midrule
+S\&P SmallCap 600 & iShares & $-$0.18 & 0.04 & $-$274$^{*}$ & 60 & $-$0.21$^{***}$ & 0.48$^{*}$ & 333$^{***}$ & 18.3 & 26 \\
+S\&P SmallCap 600 & Vanguard & $-$0.32 & 0.05 & $-$752$^{***}$ & 105$^{**}$ & $-$0.36$^{***}$ & 0.08 & 857$^{***}$ & 29.3 & 41 \\
+S\&P SmallCap 600 & SPDR & $-$0.30 & 0.09 & $-$473$^{***}$ & 125$^{***}$ & $-$0.45$^{***}$ & 0.84$^{*}$ & 597$^{***}$ & 24.4 & 56 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
